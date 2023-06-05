@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">NEXT</a>
+            <div class="navbar__toogle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="meny-wrapper">
+          <ul class="meny" id="meny">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="Ullerntrening.html">Ullern Trening</a></li>
+            <li><a href="RøaSats.html">Sats Røa</a></li>
+            <li><a href="mailto:spillemesterleon@gmail.com">Kontakt</a></li>
+        </div>
+          </ul>
+    </nav>
+
+    <div class="signup-container">
+        <h1>Lag en bruker!</h1>
+        <form id="signup-form" action="signup.php" method="POST">
+          <div class="form-group">
+            <label for="username">Brukernavn:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Post:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Passord:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Bekreft Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+      </div>
+      
+    
+    </body>
+      
+</div>    
+</body>
+</html>
